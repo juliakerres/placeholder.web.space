@@ -9,7 +9,7 @@
 
     <style>
         /* 
-        龴ↀ◡ↀ龴 hi this is julias website                    
+        龴ↀ◡ↀ龴 hi this is julias hypertext                    
         */
 
         @font-face {
@@ -17,8 +17,8 @@
             src: url(img/Hershey-Noailles-Futura-Simplex-Regular.otf);
         }
 
-
         .abouthypertext {
+            width: auto;
             border-color: black;
             border: 1px;
             border-style: dashed;
@@ -26,6 +26,8 @@
             font-family: Hershey-Noailles-Futura;
             font-size: 20px;
             padding: 10px;
+            position: relative;
+
         }
 
         a {
@@ -52,8 +54,7 @@
             padding-top: 2px;
         }
 
-        #text1,
-        #text2,
+        .text,
         #decriptionText {
 
             font-family: Hershey-Noailles-Times;
@@ -89,6 +90,19 @@
 
         }
 
+        a.clicked,
+        button.clicked {
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+            text-decoration-style: wavy;
+            color: rgb(152, 136, 245);
+            font-family: Hershey-Noailles-Times;
+            font-size: 12pt;
+            cursor: pointer;
+            border: none;
+
+        }
+
         @font-face {
             font-family: Hershey-Noailles-Times;
             src: url(img/Everson-Mono.ttf);
@@ -117,50 +131,109 @@
 
 </head>
 
-<div style="position: relative; width: 100%; height:auto;">
-    <div class="abouthypertext">this hypertext document consists of hyperlinks both within and between files,
+<div class="abouthypertext">
+    <div>this hypertext document consists of hyperlinks both within and between files,
         establishing
-        nonlinaer relations between content, squeezed into the margins of your device's screen. Unfolding its connections
-        of things that I <button style="text-decoration-style: none;" onclick="toggleImagesAndText(['bild0'])">(julia
+        nonlinaer relations between content, squeezed into the margins of your device's screen. Unfolding its
+        connections
+        of things that I <button id="button" style="text-decoration-style: none;"
+            onclick="toggleImagesAndText(['bild0']); buttonKlick(this)">(julia
             kerres)</button> did and do while
-        researching here<a href="https://www.are.na/kerres-kerres" target="_blank">(are.na)</a>and
-        irregularly posting here<a href="https://www.instagram.com/lia.gnes" target="_blank">(ig)</a>and
-        there<a href="https://github.com/juliakerres" target="_blank">(github)</a>while stuying here<a
-            href="https://www.instagram.com/gdarnhem/" target="_blank">(ArtEZ (NL))</a>and there<a
-            href="https://www.instagram.com/hsm.gestaltung/" target="_blank">(HS Mainz (DE))</a>. Feel free to drop me a message here<a href="mailto:j.kerres@gmx.net">(mail)</a>&nbsp;&nbsp;
+        researching here<a id="button" onclick="buttonKlick(this)" href="https://www.are.na/kerres-kerres"
+            target="_blank">(are.na)</a>and
+        irregularly posting here<a id="button" onclick="buttonKlick(this)" href="https://www.instagram.com/lia.gnes"
+            target="_blank">(ig)</a>and
+        there<a id="button" onclick="buttonKlick(this)" href="https://github.com/juliakerres"
+            target="_blank">(github)</a>while stuying here<a id="button" onclick="buttonKlick(this)"
+            href="https://www.instagram.com/gdarnhem/" target="_blank">(ArtEZ (NL))</a>and there<a id="button"
+            onclick="buttonKlick(this)" href="https://www.instagram.com/hsm.gestaltung/" target="_blank">(HS Mainz
+            (DE)).</a>Feel free to drop me a
+        message here<a id="button" onclick="buttonKlick(this)" href="mailto:j.kerres@gmx.net">(mail)</a>&nbsp;&nbsp;
 
-        <button onclick="toggleImagesAndText(['bild1', 'bild2', 'bild3', 'bild4'], 'text1', ['.text'])">(1)link</button>
+        <button id="button"
+            onclick="toggleImagesAndText(['bild1', 'bild2', 'bild3', 'bild4']); placeText(['text1']); buttonKlick(this)">(1)link</button>
 
-        <div id="text1" class="text hidden">
-            how to pack a meal?
+        <div class="text" id="text1" style="display: none;">
+
+            <strong>how to pack a meal?</strong>
             Why do containers mimic the shape of food? Or does the content adapt to the outer form? Through the
             binding of this booklet, I explore these questions in an ironic way. Hidden inside the folded pages, the
             shape of the food matches the shape of the container. An overview of the food containers can be found on
             the unfolded back of the book cover.
         </div>
         <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button onclick="toggleImagesAndText(['bild5', 'bild6'], 'text2', ['.text'])">(2)link</button>
-        <div id="text2" class="text" style="display: none;">
-            answer to everything. A spiritual online life counsellor. Ask your question in the text box and you will
+        <button id="button"
+            onclick="toggleImagesAndText(['bild5', 'bild6']); placeText(['text2']); buttonKlick(this)">(2)link</button>
+        <div class="text" id="text2" style="display: none;">
+
+            <strong>answer to everything.</strong> A spiritual online life counsellor. Ask your question in the text box
+            and you will
             be guided to more clarity.
 
         </div>
 
         <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button onclick="toggleImagesAndText(['bild7', 'bild8', 'bild9', 'bild10', 'bild11'], )">(❤)link</button>
+        <button id="button"
+            onclick="toggleImagesAndText(['bild7', 'bild8', 'bild9', 'bild10', 'bild11']); placeText(['text3']); buttonKlick(this)">(❤)link</button>
+
+
+        <div class="text" id="text3" style="display: none;">
+
+            <strong>soft extensions.</strong> in this rigid world where lovelessness has become part of our system,
+            where we see that our society and its structures only function through power and domination. In a world
+            where everything we learn and know is based on and shaped by domination, capitalism and patriarchy, as bell
+            hooks describes in "all about love" <a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Times; text-decoration: underline;
+            text-underline-offset: 0.2em;
+            text-decoration-style: wavy;" href="https://wtf.tw/ref/hooks.pdf" target="_blank">(link)</a>. I want to
+            imagine a world where softness becomes the measure of all things! Representative of this thought, my soft
+            extension becomes a coping tool that you can sew into your sleeve and carry with you whenever you feel the
+            need for softness.
+
+        </div>
+
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button onclick="toggleImagesAndText(['bild12', 'bild13', 'bild14'])">(4)link</button>
-        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button onclick="toggleImagesAndText(['bild15', 'bild16'])">(5)link</button>
+        <button id="button"
+            onclick="toggleImagesAndText(['bild12', 'bild13', 'bild14']);placeText(['text4']); buttonKlick(this)">(4)link</button>
 
-        <br /><button onclick="toggleImagesAndText(['bild17', 'bild18', 'bild19', 'bild20', 'bild21'])">(6)link</button>
+        <div class="text" id="text4" style="display: none;">
+            <strong>touchy type.</strong>
+            typography in use and in development to deformation. It comes in sharp edges and light smell.
+            Wash for 20-30 seconds, rinse thoroughly and dry your hands afterwards. Inspired by a music booklet of
+            melodies from famous
+            soaps, the soaps and matching soundwave towels were created.
+        </div>
+
+        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="button"
+            onclick="toggleImagesAndText(['bild15', 'bild16']);placeText(['text5']); buttonKlick(this)">(5)link</button>
+
+        <div class="text" id="text5" style="display: none;">
+            <strong>open source memory.</strong>
+            people develop methods and tools to pass on knowledge and experience to the next generations. How does this
+            idea develop in a highly technological future? What would a world look like in which private thoughts no
+            longer exist? The imaginary application gives a glimpse into this fictional reality and the human mind,
+            presented through a social platform where memories can be shared online.
+        </div>
+
+        <br /> <button id="button"
+            onclick="toggleImagesAndText(['bild17', 'bild18', 'bild19', 'bild20', 'bild21']);placeText(['text6']);  buttonKlick(this)">(6)link</button>
+        <div class="text" id="text6" style="display: none;">
+            <strong>german souvenir shop.</strong>
+            a soft approximation to the ordinary German culture through the perspective of a German. After a visual
+            investigation of German culture <a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Times; text-decoration: underline;
+            text-underline-offset: 0.2em;
+            text-decoration-style: wavy;" href="https://www.are.na/kerres-kerres/very-german"
+                target="_blank">(link)</a> it‘s aesthetics was made accessible through souvenirs: a range of napkins
+            with meat prints – postcards of special parts form the german Autobahn – tablecloth fixations in the shape
+            of pickles and hardboiled eggs.
+        </div>
     </div>
+
 </div>
 
 
 
-<div class="container"></div>
 
 <!--000
 heart-->
@@ -247,9 +320,10 @@ HOW TO PACK A MEAL?-->
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
                 (2.2) screenrecording of the
-                website <a
-                    style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;"
-                    href="https://juliakerres.github.io/answertoeverything/" target="_blank">(link)</a>
+                website <a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura; text-decoration: underline;
+                    text-underline-offset: 0.2em;
+                    text-decoration-style: wavy;" href="https://juliakerres.github.io/answertoeverything/"
+                    target="_blank">(link)</a>
             </div>
         </div>
 
@@ -265,9 +339,9 @@ HOW TO PACK A MEAL?-->
         <img onclick="vergroessern(this)" style="width: 165px; position: relative; padding: 2px;"
             src="img/soft_extension/love&care-soft extension_question.png" alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
-            (3.1) research question <a
-                style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;"
-                href="https://www.are.na/share/jrNlSMW" target="_blank">(link)</a>
+            (3.1) research question <a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura; text-decoration: underline;
+                text-underline-offset: 0.2em;
+                text-decoration-style: wavy;" href="https://www.are.na/share/jrNlSMW" target="_blank">(link)</a>
         </div>
     </div>
 
@@ -355,9 +429,9 @@ HOW TO PACK A MEAL?-->
         autoplay muted loop preload="auto" src="img/osm/Screen Recording 2022-12-31 at 21.39.55.mp4" autoplay loop
         alt=""></video>
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
-        (5.1) screenrecording of the website open source memory<a
-            style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;"
-            href="https://open-source-memory.net/" target="_blank">(link)</a>
+        (5.1) screenrecording of the website open source memory<a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura; text-decoration: underline;
+            text-underline-offset: 0.2em;
+            text-decoration-style: wavy;" href="https://open-source-memory.net/" target="_blank">(link)</a>
     </div>
 </div>
 
@@ -432,7 +506,7 @@ HOW TO PACK A MEAL?-->
 
 <script>
 
-    function toggleImagesAndText(imageIds, textId, hideIds) {
+    function toggleImagesAndText(imageIds) {
         // Verstecke alle Bilder, die nicht zu den angegebenen IDs gehören
         var allImages = document.querySelectorAll('.image');
         for (var i = 0; i < allImages.length; i++) {
@@ -444,44 +518,73 @@ HOW TO PACK A MEAL?-->
         // Zeige die Bilder mit den angegebenen IDs an oder blende sie aus, wenn sie bereits sichtbar sind
         for (var i = 0; i < imageIds.length; i++) {
             var image = document.getElementById(imageIds[i]);
+
+
             if (image.style.display === 'none') {
                 image.style.display = 'block';
             } else {
                 image.style.display = 'none';
             }
+
         }
 
-        // Zeige den Text an oder blende ihn aus, wenn er bereits sichtbar ist
-        var target = document.getElementById(textId);
-        var hideTargets = document.querySelectorAll(hideIds);
-        if (target.style.display === 'none') {
-            target.style.display = 'block';
-            for (var i = 0; i < hideTargets.length; i++) {
-                hideTargets[i].style.display = 'none';
+    }
+
+    function placeText(textIds) {
+        var allTexts = document.querySelectorAll('.text');
+        for (var i = 0; i < allTexts.length; i++) {
+            if (textIds.indexOf(allTexts[i].id) === -1) {
+                allTexts[i].style.display = 'none';
             }
-        } else {
-            target.style.display = 'none';
+        }
+        for (var i = 0; i < textIds.length; i++) {
+            var text = document.getElementById(textIds[i]);
+
+
+            if (text.style.display === 'none') {
+                text.style.display = 'block';
+            } else {
+                text.style.display = 'none';
+            }
         }
     }
 
 
 
-
-    // VERGRÖSSERN DES BILDES
+    // VERGRÖSSERN DES BILDES MIT ANIMATION
     function vergroessern(bild) {
         if (!bild.vergroessert) {
-            var imgDiv = bild.parentNode; // Greifen Sie auf das übergeordnete div-Element zu
+            var imgDiv = bild.parentNode; // Zugriff auf das übergeordnete div-Element
             var aktuellesMarginRight = parseInt(window.getComputedStyle(imgDiv).getPropertyValue("margin-right"));
-            var neuesMarginRight = aktuellesMarginRight + 10; // Fügen Sie 10 Pixel zum aktuellen margin-right hinzu
+            var neuesMarginRight = aktuellesMarginRight + 10; // Hinzufügen von 10 Pixeln zum aktuellen margin-right
 
             var aktuelleBreite = bild.offsetWidth;
             var neueBreite = aktuelleBreite * 2.9;
 
-            bild.style.width = neueBreite + "px";
-            imgDiv.style.marginRight = neuesMarginRight + "px"; // Setzen Sie das neue margin-right-Attribut für das übergeordnete div-Element
-            bild.vergroessert = true;
+            var fensterBreite = window.innerWidth; // Breite des Browserfensters
+            var maxBreite = fensterBreite - neuesMarginRight - 20; // Maximal zulässige Breite des Bildes (20 für zusätzlichen Rand)
+
+            if (neueBreite > maxBreite) {
+                neueBreite = maxBreite;
+                neuesMarginRight = fensterBreite - neueBreite - 20; // Neues margin-right berechnen
+            }
+
+            bild.style.transition = "width 0.3s ease";
+            imgDiv.style.transition = "margin-right 0.3s ease";
+
+            setTimeout(function () {
+                bild.style.width = neueBreite + "px";
+                imgDiv.style.marginRight = neuesMarginRight + "px";
+                bild.vergroessert = true;
+            }, 10);
         }
+
     }
+
+    function buttonKlick(button) {
+        button.classList.add("clicked");
+    }
+
 
 
 </script>
