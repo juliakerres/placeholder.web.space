@@ -132,7 +132,9 @@
 </head>
 
 <div class="abouthypertext">
-    <div>this hypertext document consists of hyperlinks both within and between files,
+    <div>this<a id="button" onclick="buttonKlick(this)"
+            href="https://www.ics.uci.edu/~andre/informatics223s2009/conklin.pdf"
+            target="_blank">(hypertext)</a>document consists of hyperlinks both within and between files,
         establishing
         nonlinaer relations between content, squeezed into the margins of your device's screen. Unfolding its
         connections
@@ -156,7 +158,7 @@
         message here<a id="button" onclick="buttonKlick(this)" href="mailto:j.kerres@gmx.net">(mail)</a>&nbsp;&nbsp;
 
         <button id="button"
-            onclick="toggleImagesAndText(['bild1', 'bild2', 'bild3', 'bild4']); placeText(['text1']); buttonKlick(this)">(1)link</button>
+            onclick="toggleImagesAndText(['bild1', 'bild2', 'bild3', 'bild4', 'bild41']); placeText(['text1']); buttonKlick(this)">(1)link</button>
 
         <div class="text" id="text1" style="display: none;">
 
@@ -248,7 +250,7 @@ heart-->
         <img onclick="vergroessern(this)" style="width: 100px; position: relative; padding: 2px;" src="img/heart.png"
             alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
-            this website is handmade and still in progress</div>
+            this website is handmade. last update 07/06/23</div>
     </div>
     <!--000
 heart-->
@@ -297,6 +299,16 @@ HOW TO PACK A MEAL?-->
                 (1.3) insight of a page</div>
         </div>
 
+        <div class="image" id="bild41" onclick="vergroessern(this)"
+            style="width: 130px; float: left; margin-right: 5px; position: relative; display:none;">
+            <video onclick="vergroessern(this)"
+                style="width: 130px; position: relative; padding: 2px; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);"
+                autoplay muted loop preload="auto" src="img/how_to_pack_a_meal/video_02.mp4" autoplay loop
+                alt=""></video>
+            <div
+                style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
+                (1.4) folding of the wrapper</div>
+        </div>
 
         <!--001------------END
 HOW TO PACK A MEAL?-->
