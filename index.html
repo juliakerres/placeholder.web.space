@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>julia</title>
+    <title>♡</title>
 
     <style>
         /* 
@@ -18,7 +18,13 @@
         }
 
         .abouthypertext {
-            width: auto;
+            overflow: hidden;
+            width: 100%;
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            min-width: 300px;
+            max-width: 100%;
             border-color: black;
             border: 1px;
             border-style: dashed;
@@ -29,6 +35,7 @@
             position: relative;
 
         }
+
 
         a {
             font-family: Hershey-Noailles-Futura;
@@ -54,12 +61,11 @@
             padding-top: 2px;
         }
 
-        .text,
-        #decriptionText {
+        .text {
 
             font-family: Hershey-Noailles-Times;
             font-size: 12pt;
-            margin-left: 200px;
+
             line-height: 12pt;
         }
 
@@ -126,39 +132,32 @@
         .hidden {
             display: none;
         }
+
+        .image {
+            position: absolute;
+            z-index: 10;
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 
 
 </head>
 
 <div class="abouthypertext">
-    <div>this<a id="button" onclick="buttonKlick(this)" href="http://iasl.uni-muenchen.de/links/GCA-VI.2e.html"
-            target="_blank">(hypertext)</a>document consists of hyperlinks,
-        establishing relations between content, squeezed into the margins of your device's screen. Unfolding its
-        connections
-        of things that I <button id="button" style="text-decoration-style: none;"
-            onclick="toggleImagesAndText(['bild0']); placeText(['text0']); buttonKlick(this);">(julia
-            kerres)
-            <div class="text" id="text0" style="display: none;">
-                <img style="width: 20px; position: fixed; transform: translate(-25px, -20px);"
-                    src="img/computer_explorer_cool-0.png">
-            </div>
-        </button> did and do while
-        researching here<a id="button" onclick="buttonKlick(this)" href="https://www.are.na/kerres-kerres"
-            target="_blank">(are.na)</a>and
-        irregularly posting here<a id="button" onclick="buttonKlick(this)" href="https://www.instagram.com/lia.gnes"
-            target="_blank">(ig)</a>and
-        there<a id="button" onclick="buttonKlick(this)" href="https://github.com/juliakerres"
-            target="_blank">(github).</a>In 2024 I graduated from Graphic Design while styding here<a id="button"
-            onclick="buttonKlick(this)" href="https://www.instagram.com/gdarnhem/" target="_blank">(ArtEZ (NL))</a>and
-        there<a id="button" onclick="buttonKlick(this)" href="https://www.instagram.com/hsm.gestaltung/"
-            target="_blank">(HS Mainz
-            (DE))</a>and worked as an intern for the<a id="button" onclick="buttonKlick(this)"
-            href="https://transmediale.de/en/2024-festival">(transmediale festival)</a>2024 you're doing amazing
-        sweetie.
-        Feel free
-        to drop me a
-        message here<a id="button" onclick="buttonKlick(this)" href="mailto:j.kerres@gmx.net">(mail)</a>&nbsp;&nbsp;
+
+    <div>Julia Kerres, Graphic Design Graduate from<a id="button" onclick="buttonKlick(this)"
+            href="https://www.instagram.com/hsm.gestaltung/" target="_blank">(HS Mainz (DE))</a>in 2024, with an
+        exchange
+        year at<a id="button" onclick="buttonKlick(this)" href="https://www.instagram.com/gdarnhem/"
+            target="_blank">(ArtEZ (NL)).</a>Part of the 37th edition of <a id="button" onclick="buttonKlick(this)"
+            href="https://transmediale.de/en/2024-festival" target="_blank">(transmediale
+            festival)</a><i> you're doing
+            amazing sweetie</i> as an intern in 2024. <a id="button" onclick="buttonKlick(this)"
+            href="https://www.are.na/kerres-kerres" target="_blank">(are.na)</a><a id="button"
+            onclick="buttonKlick(this)" href="https://www.instagram.com/lia.gnes" target="_blank">(ig)</a>Feel free to
+        drop me a<a id="button" onclick="buttonKlick(this)"
+            href="mailto:j.kerres@gmx.net">(message)</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
         <button id="button"
             onclick="toggleImagesAndText(['bild1', 'bild2', 'bild3', 'bild4', 'bild41']); placeText(['text1']); buttonKlick(this)">(1)</button>
@@ -250,7 +249,7 @@
         <strong>soft encyclopedia.</strong><a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Times; text-decoration: underline;
         text-underline-offset: 0.2em;
         text-decoration-style: wavy;" href="https://www.soft-encyclopedia.net"
-            target="_blank">(http://soft-encyclopedia.net)</a>explores the
+            target="_blank">(http://soft-encyclopedia.net)</a> explores the
         web’s intrinsic network nature as a narrative
         tool. By claiming hypertext’s non-sequential and non-linear structures as an antidote to an alienating, heroic,
         and causal mode of reasoning dominating Western perception and belief system, soft encyclopedia enables
@@ -281,9 +280,9 @@
 <!--000
 heart-->
 <div style="display:flex; flex-wrap: wrap; align-self:flex-end;">
-    <div class="image" id="bild0" onclick="vergroessern(this)"
+    <div class="image" id="bild0" onclick="toggleBild(this)"
         style="width: 100px;  float: left; margin-right: 5px; margin-bottom: -5px; position: relative; display:none;">
-        <img onclick="vergroessern(this)" style="width: 100px; position: relative; padding: 2px;" src="img/heart.png"
+        <img onclick="toggleBild(this)" style="width: 100px; position: relative; padding: 2px;" src="img/heart.png"
             alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
             this website is handmade. last update 17/07/24</div>
@@ -296,9 +295,9 @@ HOW TO PACK A MEAL?-->
     <!--<p1 id="eins" class="hidden">(1)</p>-->
 
     <div style="display:flex; flex-wrap: wrap; align-self:flex-end;">
-        <div class="image" id="bild1" onclick="vergroessern(this)"
-            style="width: 255px;  float: left; margin-right: 5px; position: relative; display:none;">
-            <img onclick="vergroessern(this)" style="width: 255px; position: relative; padding: 2px;"
+        <div class="image" id="bild1" onclick="toggleBild(this)"
+            style="width: 255px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+            <img onclick="toggleBild(this)" style="width: 255px; position: relative; padding-right: 5px;"
                 src="img/how_to_pack_a_meal/how.to.box.a_full.jpg" alt="">
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
@@ -308,39 +307,38 @@ HOW TO PACK A MEAL?-->
         </div>
 
 
-        <div class="image" id="bild2" onclick="vergroessern(this)"
-            style="width: 130px; float: left; margin-right: 5px; position: relative; display:none;">
-            <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+        <div class="image" id="bild2" onclick="toggleBild(this)"
+            style="width: 130px; float: left;  position: relative; display:none; padding-right: 5px; padding-top:5px;">
+            <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
                 src="img/how_to_pack_a_meal/how.to.box.a2_1.png" alt="">
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
                 (1.2.1) spread</div>
         </div>
 
-        <div class="image" id="bild3" onclick="vergroessern(this)"
-            style="width: 130px; float: left; margin-right: 5px; position: relative; display:none;">
-            <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+        <div class="image" id="bild3" onclick="toggleBild(this)"
+            style="width: 130px; float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+            <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
                 src="img/how_to_pack_a_meal/2.jpg" alt="">
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
                 (1.2.2) spread</div>
         </div>
 
-        <div class="image" id="bild4" onclick="vergroessern(this)"
-            style="width: 130px; float: left; margin-right: 5px; position: relative; display:none;">
-            <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+        <div class="image" id="bild4" onclick="toggleBild(this)"
+            style="width: 130px; float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+            <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
                 src="img/how_to_pack_a_meal/tupper05.jpg" alt="">
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
                 (1.3) insight of a page</div>
         </div>
 
-        <div class="image" id="bild41" onclick="vergroessern(this)"
-            style="width: 130px; float: left; margin-right: 5px; position: relative; display:none;">
-            <video onclick="vergroessern(this)"
-                style="width: 130px; position: relative; padding: 2px; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);"
-                autoplay muted loop preload="auto" src="img/how_to_pack_a_meal/video_02.mp4" autoplay loop
-                alt=""></video>
+        <div class="image" id="bild41" onclick="toggleBild(this)"
+            style="width: 130px; float: left; position: relative; display:none; padding-top:5px;">
+            <video onclick="toggleBild(this)"
+                style="width: 130px; position: relative; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);" autoplay
+                muted loop preload="auto" src="img/how_to_pack_a_meal/video_02.mp4" autoplay loop alt=""></video>
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
                 (1.4) folding of the wrapper</div>
@@ -353,9 +351,9 @@ HOW TO PACK A MEAL?-->
         <!--002
 02 ANSWER TO EVERYTHING-->
 
-        <div class="image" id="bild5" onclick="vergroessern(this)"
-            style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-            <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+        <div class="image" id="bild5" onclick="toggleBild(this)"
+            style="width: 130px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+            <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
                 src="img/answer_to_everything/three_stars.png" alt="">
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
@@ -364,12 +362,11 @@ HOW TO PACK A MEAL?-->
             </div>
         </div>
 
-        <div class="image" id="bild6" onclick="vergroessern(this)"
-            style=" width: 260px; float: left; margin-right: 5px; position: relative; display:none;">
-            <video onclick="vergroessern(this)"
-                style="width: 260px; position: relative; padding: 2px; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);"
-                autoplay muted loop preload="auto" src="img/answer_to_everything/ate_website.mov" autoplay loop
-                alt=""></video>
+        <div class="image" id="bild6" onclick="toggleBild(this)"
+            style=" width: 260px; float: left; position: relative; display:none; padding-top:5px;">
+            <video onclick="toggleBild(this)"
+                style="width: 260px; position: relative; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);" autoplay
+                muted loop preload="auto" src="img/answer_to_everything/ate_website.mov" autoplay loop alt=""></video>
             <div
                 style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
                 (2.2) screenrecording of the
@@ -387,9 +384,9 @@ HOW TO PACK A MEAL?-->
     <!--003
 03 SOFT EXTENSION-->
 
-    <div class="image" id="bild7" onclick="vergroessern(this)"
-        style="width: 165px;  float: left; margin-right: 5px; position: relative; display:none;">
-        <img onclick="vergroessern(this)" style="width: 165px; position: relative; padding: 2px;"
+    <div class="image" id="bild7" onclick="toggleBild(this)"
+        style="width: 165px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+        <img onclick="toggleBild(this)" style="width: 165px; position: relative; padding-right: 5px;"
             src="img/soft_extension/love&care-soft extension_question.png" alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
             (3.1) research question <a id="button" onclick="buttonKlick(this)" style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura; text-decoration: underline;
@@ -399,36 +396,36 @@ HOW TO PACK A MEAL?-->
     </div>
 
 
-    <div class="image" id="bild8" onclick="vergroessern(this)"
-        style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-        <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+    <div class="image" id="bild8" onclick="toggleBild(this)"
+        style="width: 130px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+        <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
             src="img/soft_extension/soft_extension.JPG" alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
             (3.2.1) soft extension
         </div>
     </div>
 
-    <div class="image" id="bild9" onclick="vergroessern(this)"
-        style="width: 174px;  float: left; margin-right: 5px; position: relative; display:none;">
-        <img onclick="vergroessern(this)" style="width: 174px; position: relative; padding: 2px;"
+    <div class="image" id="bild9" onclick="toggleBild(this)"
+        style="width: 174px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+        <img onclick="toggleBild(this)" style="width: 174px; position: relative; padding-right: 5px;"
             src="img/soft_extension/care.jpg" alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
             (3.2.2) soft extension
         </div>
     </div>
 
-    <div class="image" id="bild10" onclick="vergroessern(this)"
-        style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-        <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+    <div class="image" id="bild10" onclick="toggleBild(this)"
+        style="width: 130px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+        <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
             src="img/soft_extension/soft_extension_05.png" alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
             (3.3.1) spread of the research booklet
         </div>
     </div>
 
-    <div class="image" id="bild11" onclick="vergroessern(this)"
-        style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-        <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+    <div class="image" id="bild11" onclick="toggleBild(this)"
+        style="width: 120px;  float: left; position: relative; display:none; padding-top:5px;">
+        <img onclick="toggleBild(this)" style="width: 135px; position: relative;"
             src="img/soft_extension/soft_extension_06.png" alt="">
         <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
             (3.3.2) spread of the research booklet
@@ -441,29 +438,28 @@ HOW TO PACK A MEAL?-->
 
 <!--004
 04 EDGY-->
-<div class="image" id="bild14" onclick="vergroessern(this)"
-    style="width: 160px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 160px; position: relative; padding: 2px;"
+<div class="image" id="bild14" onclick="toggleBild(this)"
+    style="width: 160px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 160px; position: relative; padding-right: 5px;"
         src="img/edgy/touchy_type.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (4.3) touchy type
     </div>
 </div>
 
-<div class="image" id="bild12" onclick="vergroessern(this)"
-    style="width: 165px;  float: left; margin-right: 7px; position: relative; display:none;">
-    <video onclick="vergroessern(this)"
-        style="width: 165px; position: relative; padding: 2px; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);"
+<div class="image" id="bild12" onclick="toggleBild(this)"
+    style="width: 165px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <video onclick="toggleBild(this)"
+        style="width: 165px; position: relative; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75); padding-right: 5px;"
         autoplay muted loop preload="auto" src="img/edgy/Seife.mp4" autoplay loop alt=""></video>
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (4.1) type specimen of touchy type
     </div>
 </div>
 
-<div class="image" id="bild13" onclick="vergroessern(this)"
-    style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
-        src="img/edgy/Handtuch01.png" alt="">
+<div class="image" id="bild13" onclick="toggleBild(this)"
+    style="width: 130px;  float: left; position: relative; display:none; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 130px; position: relative;" src="img/edgy/Handtuch01.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (4.2) towel with sound waves
     </div>
@@ -475,10 +471,10 @@ HOW TO PACK A MEAL?-->
 
 <!--005
 05 OSM-->
-<div class="image" id="bild15" onclick="vergroessern(this)"
-    style="width: 195px;  float: left; margin-right: 7px; position: relative; display:none;">
-    <video onclick="vergroessern(this)"
-        style="width: 195px; position: relative; padding: 2px; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75);"
+<div class="image" id="bild15" onclick="toggleBild(this)"
+    style="width: 195px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <video onclick="toggleBild(this)"
+        style="width: 195px; position: relative; box-shadow: -1px 3px 10px -2px rgba(0,0,0,0.75); padding-right: 5px;"
         autoplay muted loop preload="auto" src="img/osm/Screen Recording 2022-12-31 at 21.39.55.mp4" autoplay loop
         alt=""></video>
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
@@ -488,10 +484,9 @@ HOW TO PACK A MEAL?-->
     </div>
 </div>
 
-<div class="image" id="bild16" onclick="vergroessern(this)"
-    style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;" src="img/osm/text.png"
-        alt="">
+<div class="image" id="bild16" onclick="toggleBild(this)"
+    style="width: 130px;  float: left; position: relative; display:none; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 130px; position: relative;" src="img/osm/text.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (5.2) speculative founders letter of open source memory
     </div>
@@ -501,36 +496,36 @@ HOW TO PACK A MEAL?-->
 
 <!--006
 06 german souvenir shop-->
-<div class="image" id="bild17" onclick="vergroessern(this)"
-    style="width: 150px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 150px; position: relative; padding: 2px;"
+<div class="image" id="bild17" onclick="toggleBild(this)"
+    style="width: 150px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 150px; position: relative; padding-right: 5px;"
         src="img/german/kisok_ohne_ugly_blue.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (6.1) german souvenir shop installation
     </div>
 </div>
 
-<div class="image" id="bild18" onclick="vergroessern(this)"
-    style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;" src="img/german/towel.png"
-        alt="">
+<div class="image" id="bild18" onclick="toggleBild(this)"
+    style="width: 130px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
+        src="img/german/towel.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (6.2) german meat napkin
     </div>
 </div>
 
-<div class="image" id="bild19" onclick="vergroessern(this)"
-    style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <!-- <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+<div class="image" id="bild19" onclick="toggleBild(this)"
+    style="width: 130px;  float: left; position: relative; display:none; ">
+    <!-- <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
         src="img/german/IMG_6319 2 2.JPG" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (6.3) german sausage napkin
     </div>-->
 </div>
 
-<div class="image" id="bild20" onclick="vergroessern(this)"
-    style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
+<div class="image" id="bild20" onclick="toggleBild(this)"
+    style="width: 130px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 130px; position: relative; padding-right: 5px;"
         src="img/german/autobahn_092.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (6.3.1) postcard of special part
@@ -538,10 +533,9 @@ HOW TO PACK A MEAL?-->
     </div>
 </div>
 
-<div class="image" id="bild21" onclick="vergroessern(this)"
-    style="width: 130px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 130px; position: relative; padding: 2px;"
-        src="img/german/autobahn_09.png" alt="">
+<div class="image" id="bild21" onclick="toggleBild(this)"
+    style="width: 130px;  float: left; position: relative; display:none; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 130px; position: relative;" src="img/german/autobahn_09.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (6.3.2) postcard of special part
         form the german Autobahn
@@ -552,56 +546,55 @@ HOW TO PACK A MEAL?-->
 
 <!--007
 07 soft encyclopedia-->
-<div class="image" id="bild26" onclick="vergroessern(this)"
-    style="width: 310px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 310px; position: relative; padding: 2px;"
+<div class="image" id="bild26" onclick="toggleBild(this)"
+    style="width: 310px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 310px; position: relative; padding-right: 5px;"
         src="img/soft_encyclopedia/title.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (7.1) url
     </div>
 </div>
 
-<div class="image" id="bild22" onclick="vergroessern(this)"
-    style="width: 160px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 160px; position: relative; padding: 2px;"
+<div class="image" id="bild22" onclick="toggleBild(this)"
+    style="width: 160px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 160px; position: relative; padding-right: 5px;"
         src="img/soft_encyclopedia/Julia-Kerres.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (7.2) installation
     </div>
 </div>
 
-<div class="image" id="bild23" onclick="vergroessern(this)"
-    style="width: 165px;  float: left; margin-right: 7px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 160px; position: relative; padding: 2px;"
+<div class="image" id="bild23" onclick="toggleBild(this)"
+    style="width: 165px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 160px; position: relative; padding-right: 5px;"
         src="img/soft_encyclopedia/05_Screen_soft-encyclopedia_Julia_Kerres.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (7.3) screen
     </div>
 </div>
 
-<div class="image" id="bild24" onclick="vergroessern(this)"
-    style="width: 310px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 310px; position: relative; padding: 2px;"
+<div class="image" id="bild24" onclick="toggleBild(this)"
+    style="width: 310px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 310px; position: relative; padding-right: 5px;"
         src="img/soft_encyclopedia/url-print.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (7.4) printed url
     </div>
 </div>
 
-<div class="image" id="bild25" onclick="vergroessern(this)"
-    style="width: 170px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <img onclick="vergroessern(this)" style="width: 170px; position: relative; padding: 2px;"
+<div class="image" id="bild25" onclick="toggleBild(this)"
+    style="width: 170px;  float: left; position: relative; display:none; padding-right: 5px; padding-top:5px;">
+    <img onclick="toggleBild(this)" style="width: 170px; position: relative; padding-right: 5px;"
         src="img/soft_encyclopedia/flyer.png" alt="">
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (7.5) announcement exhibition 'fluid bodies on nonlinear underscores'
     </div>
 </div>
 
-<div class="image" id="bild27" onclick="vergroessern(this)"
-    style="width: 170px;  float: left; margin-right: 5px; position: relative; display:none;">
-    <video onclick="vergroessern(this)" style="width: 195px; position: relative; padding: 2px; " autoplay muted loop
-        preload="auto" src="img/soft_encyclopedia/fluid-bodies-on-nonlinear-underscores-Julia_Kerres.mp4" autoplay loop
-        alt=""></video>
+<div class="image" id="bild27" onclick="toggleBild(this)"
+    style="width: 170px;  float: left; position: relative; display:none; padding-top:5px;">
+    <video onclick="toggleBild(this)" style="width: 195px; position: relative;" autoplay muted loop preload="auto"
+        src="img/soft_encyclopedia/fluid-bodies-on-nonlinear-underscores-Julia_Kerres.mp4" autoplay loop alt=""></video>
     <div style="text-align: left; font-size: 14px; margin: 2px; padding:2px; font-family: Hershey-Noailles-Futura;">
         (7.6) animation exhibition 'fluid bodies on nonlinear underscores'
     </div>
@@ -658,41 +651,46 @@ HOW TO PACK A MEAL?-->
 
 
 
-    // VERGRÖSSERN DES BILDES MIT ANIMATION
-    function vergroessern(bild) {
-        if (!bild.vergroessert) {
-            var imgDiv = bild.parentNode; // Zugriff auf das übergeordnete div-Element
-            var aktuellesMarginRight = parseInt(window.getComputedStyle(imgDiv).getPropertyValue("margin-right"));
-            var neuesMarginRight = aktuellesMarginRight + 10; // Hinzufügen von 10 Pixeln zum aktuellen margin-right
-
+    // VERGRÖSSERN ODER VERKLEINERN DES BILDES MIT ANIMATION
+    function toggleBild(bild) {
+        if (bild.vergroessert) {
+            // Verkleinern des Bildes
+            bild.style.transition = "width 0.3s ease";
+            setTimeout(function () {
+                bild.style.width = bild.originalBreite + "px";
+                bild.vergroessert = false;
+            }, 10);
+        } else {
+            // Vergrößern des Bildes
             var aktuelleBreite = bild.offsetWidth;
-            var neueBreite = aktuelleBreite * 2.9;
-
             var fensterBreite = window.innerWidth; // Breite des Browserfensters
-            var maxBreite = fensterBreite - neuesMarginRight - 20; // Maximal zulässige Breite des Bildes (20 für zusätzlichen Rand)
+            var maxBreite = fensterBreite - 40; // Maximal zulässige Breite des Bildes (20px Padding auf jeder Seite)
+            var neueBreite = aktuelleBreite * 2.9;
 
             if (neueBreite > maxBreite) {
                 neueBreite = maxBreite;
-                neuesMarginRight = fensterBreite - neueBreite - 20; // Neues margin-right berechnen
+            }
+
+            // Nur die Originalbreite speichern, wenn das Bild noch nicht vergrößert ist
+            if (bild.originalBreite === undefined) {
+                bild.originalBreite = aktuelleBreite;
             }
 
             bild.style.transition = "width 0.3s ease";
-            imgDiv.style.transition = "margin-right 0.3s ease";
-
             setTimeout(function () {
                 bild.style.width = neueBreite + "px";
-                imgDiv.style.marginRight = neuesMarginRight + "px";
                 bild.vergroessert = true;
             }, 10);
         }
-
     }
 
-    function buttonKlick(button) {
-        button.classList.add("clicked");
-    }
-
-
+    // Initialisierung der Bilder
+    document.querySelectorAll('img').forEach(function (bild) {
+        bild.vergroessert = false; // Status initialisieren
+        bild.addEventListener('click', function () {
+            toggleBild(bild);
+        });
+    });
 
 </script>
 
