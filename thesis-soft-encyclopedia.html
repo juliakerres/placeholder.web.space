@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Thesis – Soft Encyclopedia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @font-face {
+            font-family: 'Hershey-Noailles-Futura';
+            src: url('fonts/Hershey-Noailles-Futura.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: Hershey-Noailles-Futura;
+            src: url(img/Hershey-Noailles-Futura-Simplex-Regular.otf);
+        }
+
+        @font-face {
+            font-family: 'Hershey-Noailles-Times';
+            src: url('fonts/Hershey-Noailles-Futura.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: Hershey-Noailles-Times;
+            src: url(img/Everson-Mono.ttf);
+        }
+
+        @font-face {
+            font-family: 'Hershey-Noailles-Times-Italic';
+            src: url('fonts/Hershey-Noailles-Futura.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: Hershey-Noailles-Times-Italic;
+            src: url(img/Hershey-Noailles-Times-Duplex-Italic-Regular.otf);
+        }
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Hershey-Noailles-Futura', sans-serif;
+            font-size: 11.5pt;
+            font-style: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.5;
+        }
+
+        .text-container {
+            width: 550px;
+            height: 550px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            /* 🚫 verhindert horizontales Scrollen */
+        }
+
+        .text-container p {
+            margin: 0;
+            line-height: 1.4;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            scroll-behavior: smooth;
+
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            body {
+                display: block;
+                padding: 20px;
+            }
+
+            .text-container {
+                width: 100%;
+                height: auto;
+                overflow: visible;
+            }
+        }
+
+        .headline {
+            font-family: Hershey-Noailles-Times-Italic;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            font-weight: bold;
+        }
+
+        .source {
+            color: rgb(153, 125, 0);
+        }
+
+        .definition {
+            color: rgb(233, 190, 0);
+            font-style: italic;
+        }
+
+        a {
+            color: rgb(133, 133, 133);
+            text-decoration: underline;
+            text-decoration-style: wavy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text-container">
+        <p class="headline" style="color: rgb(255, 218, 116);">
+            <a href="#introduction">Introduction</a>
+            <br>
+            <a href="#things">2 blurring heroism – invoking the true nature of things</a>
+            <br>
+            <a href="#normativity">2.1 heroic normativity</a>
+            <br>
+            <a href="#complexity">2.2 carrying complexity</a>
+            <br>
+            <a href="#worlding">2.3 wor(l)ding through wor(l)ding</a>
+            <br>
+            <a href="#linearity">3 disrupting linearity</a>
+            <br>
+            <a href="#connections">3.1 within its connections</a>
+            <br>
+            <a href="#trails">3.2 associative trails</a>
+            <br>
+            <a href="#thought">3.3 augmenting thought</a>
+            <br>
+            <a href="#text">3.4 beyond ordinary text</a>
+            <br>
+            <a href="#worlds">3.5 weaving worlds</a>
+            <br>
+            <a href="#URL">3.6 enter URL</a>
+            <br>
+            <a href="#conclusion">conclusion</a>
+            <br>
+            <br>
+        </p>
+
+        <p>
+            <span class="headline" id="introduction">introduction</span>
+            soft
+            encyclopedia is a conceptual
+            attempt to investigate the web’s intrinsic network nature as
+            a narrative tool. By exploring the intentions and thoughts of the web’s pioneers, the work examines the
+            inherent qualities of hypertext as non-sequential and non-linear structures. These properties are juxtaposed
+            with the conventional information and knowledge practices that subliminally shape our perception and belief
+            systems. What science has obscured with its linear and heroic conception is the very essence of all things:
+            “chaos, complexity, connectionism.”<span class="source">1꩜(Sadie Plant: Zeros and Ones. Digital Women + the
+                new Technolculture,
+                Fourth Estate, London 1998, p. 164)</span>. By claiming hypertext as the antidote to a causal and
+            alienating system
+            of storytelling, soft encyclopedia enables connections in between links that at first seemed distant. It
+            sparks associative thinking and opens up the possibility to constantly (re)link and (re)shape truths. As a
+            different kind of narrative, as a container “[...] holding things in a particular, powerful relation to one
+            another and to us.” <span class="source">2꩜(Ursula K. Le Guin: The Carrier Bag Theory of Fiction, Ignota
+                Books, London 2019, p.
+                41)</span> In the following research, I will first concentrate on a rather enclosing than excluding
+            manner of
+            telling. A way of narrating that establishes conscious connections between things, blurring heroism to
+            enclose us within the entanglement of the world. The subsequent part addresses the concept of
+            inter-relational structures within hypertext, where conclusions are drawn from the ideas that preceded the
+            World Wide Web.
+
+
+            <span class="headline" id="things">2
+                blurring heroism – invoking the true nature of things</span> This chapter takes a critical look
+            at the traditional narratives of history and their impact on the present, in order to allow and highlight
+            different perspectives. The ideas discussed in the chapter provide a pathway for using stories to create
+            connections and reflect complexity.
+
+
+            <span class="headline" id="normativity">2.1 heroic normativity</span> As we look at what we have been taught
+            throughout
+            the western history, we find ourselves confronted with a narrative that tells stories of our ancient heroes
+            in imposing glory. A supposedly consistent linear history of victories, where violence and power appear to
+            be the core to the plot. A story that evolves through the hero’s endeavours –“The killer story.” <span
+                class="source">3꩜(Ursula K.
+                Le Guin: The Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 40)</span> as Ursula Le Guin
+            aptly
+            described it in her essay The Carrier Bag Theory of Fiction from 1986, questions precisely the way of
+            passing on our past from generation to generation. “[...] [C]ulture was explained as originating from and
+            elaborating upon the use of long, hard objects for sticking, bashing and killing.” – Ursula K. Le Guin <span
+                class="source">4꩜(Ursula K. Le Guin: The
+                Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 38)</span> The glorious
+            utopia-past, sold to us as growth and progress-driven, is forced into our perception of reality through the
+            hero that reinforces the narrative. This narrative portrays men as the sole protagonists; the sole
+            architects of the world while his surroundings either serve as a resource or as obstacles in his paths.<span
+                class="source">5꩜
+                (cf. Donna J. Haraway: “Carrier Bags for Worlding” conference at Index Art Book Fair, kurimanzutto
+                Mexico
+                2020, https://www.youtube.com/watch?v=H1qwFhS45_c (Retrieved April 17, 2024))</span> What shadows does
+            this type of
+            narrative cast? If, as described by Le Guin, the weapon becomes the crucial aspect of the narrative <span
+                class="source">6꩜ (cf.
+                Ursula K. Le Guin: The Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 38)</span>, the
+            surrounding
+            becomes something to be overcome.<span class="source">7꩜ (cf. Donna J. Haraway: “Carrier Bags for Worlding”
+                conference at Index
+                Art Book Fair, kurimanzutto Mexico 2020, https://www.youtube.com/watch?v=H1qwFhS45_c (Retrieved April
+                17,
+                2024) )</span> The weapon metaphorically creates distance from everything else: to ourselves, to others
+            and to
+            nature. And while “[m]an conquers earth, space, aliens, death, the future, etc.”<span class="source">8꩜
+                (Ursula K. Le Guin: The
+                Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 43)</span> , the influence of his actions
+            will persist
+            reflected in our values and understanding of the world. As it might have come clear, that history of
+            humanity has always been and continues to be an endless linear narrative of men explaining the world defined
+            on him to himself and “swallowing every actor ad infinitum until there is nothing.”<span class="source">9꩜
+                (Gizem Oktay: “A
+                Thinking Tool for COVID-19 and Beyond: Liminality”, Medium, 2020,
+                https://medium.com/a-liminal-space/a-thinking-tool-for-covid-19-and-beyond-liminality-492a432f0ce1#c728
+                (Retrieved April 10, 2024))</span> His science has described our environment from a reductionist
+            perspective, where
+            “everything in the universe, no matter how complex, mysterious, or spiritual it might seem, can
+            theoretically be reduced to a series of ‘nothing but’ descriptions: nothing but atoms, nothing but neurons,
+            nothing but genes.”<span class="source">10꩜ (Gizem Oktay: “A Thinking Tool for COVID-19 and Beyond:
+                Liminality”, Medium, 2020,
+                https://medium.com/a-liminal-space/a-thinking-tool-for-covid-19-and-beyond-liminality-492a432f0ce1#c728
+                (Retrieved April 10, 2024))</span> This reductionism results from placing human consciousness at the top
+            of
+            hierarchy to simplify and separate everything else. However, contrary to this notion, acknowledging
+            ambiguity can blur these established boundaries.<span class="source">11꩜ (cf. Gizem Oktay: “A Thinking Tool
+                for COVID-19 and
+                Beyond: Liminality”, Medium, 2020,
+                https://medium.com/a-liminal-space/a-thinking-tool-for-covid-19-and-beyond-liminality-492a432f0ce1#c728
+                (Retrieved April 10, 2024))</span> “Copernicus told us that the earth was not the center. Darwin told us
+            that man
+            is not the center. If we listened to the anthropologists we might hear them telling us, with appropriate
+            indirectness, that the White West is not the center.”– Ursula Le Guin <span class="source">12꩜ (Ursula K. Le
+                Guin: “A
+                Non-Euclidean View of
+                California as a Cold Place to Be”, in: Grove Press (Ed.): Dancing at the edge of the world. Thoughts on
+                words, women, places, New York 2018
+                https://monoskop.org/media/text/le_guin_1989_dancing_at_the_edge_of_the_world/#c11 (Retrieved April 03,
+                2024))</span>
+
+
+            <span class="headline" id="complexity">2.2 carrying complexity</span>
+            Contrasting the well known story of the hero, Ursula Le Guin points to the fact that “before the tool that
+            forces energy outward, we made the tool that brings energy home.”<span class="source">13꩜(Ursula K. Le Guin:
+                The Carrier Bag
+                Theory of Fiction, Ignota Books, London 2019, p. 38)</span> Referencing the evolutionary theory Woman‘s
+            Creation – Sexual Evolution and the Shaping of Society by the feminist Elisabeth Fischer, who presented the
+            baby sling and the carrier bag as the most important technical invention in evolutionary progression: “for
+            making it possible to establish a human community, for making it possible to travel, for making it possible
+            to share.”<span class="source">14꩜ (Donna J. Haraway: “Carrier Bags for Worlding” conference at Index Art
+                Book Fair, kurimanzutto
+                Mexico 2020, https://www.youtube.com/watch?v=H1qwFhS45_c (Retrieved am April 17, 2024))</span> A theory
+            that was
+            always thought of as women’s fantasy and not at all a piece of science. But what if one embraces this shift
+            in perspective, sees the container as the most important tool of human history and uses the bag as a
+            metaphor? As an empty vessel that has the ability to contain things, as a thing that collects things, as a
+            thing/place that holds things together, as a thing that relates things, as a thing that provides space, as a
+            thing that carries things, as a thing from which things can be shared with others. And yet the thing can be
+            anything.
+            The carrier bag is not only a method to rupture ingrained understandings of human existence; it is also a
+            method to bring things in different relations, a method of re-stor(e)y-ing, and a method of telling
+            (her)story. Le Guin provides us with a groundwork to shift perspectives and values towards what we have
+            established distance from. Her thoughts highlight the interconnectedness of things; they help us to think
+            with and to stay with the complexity of natural cultural multispecies entanglement on Earth <span
+                class="source">15꩜(cf. Donna J.
+                Haraway: “Carrier Bags for Worlding” conference at Index Art Book Fair, kurimanzutto Mexico 2020,
+                https://www.youtube.com/watch?v=H1qwFhS45_c (Retrieved am April 17, 2024))</span>, as Donna Haraway
+            described it in
+            her talk Carrier Bags for Worlding. Le Guin leads us out of this mindset of human exceptionalism and
+            conquest narratives that objectify everything else than the human self and simultaneously undermine the
+            other’s values. She urges us to tell “the other story, the untold one, the life story,”<span
+                class="source">16꩜ (Ursula K. Le
+                Guin: The Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 40)</span> which offers the
+            possibility to
+            expand and include much more. Telling the story of the living embodies the fact that everything exists and
+            acts in a continuous and active process. It is a relational network “full of beginnings without ends, of
+            initiations, of losses, of transformations and translations, and far more tricks than conflicts.”<span
+                class="source">17꩜ (Ursula
+                K. Le Guin: The Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 42)</span> The live story
+            considers
+            the whole system in a steady flow, whereas the story of the hero (the killer story) starts one-sided and
+            ends one-sided. The other story implies the true name of things – as a language that allows us to speak more
+            truthfully.
+
+            <span class="headline" id="worlding">2.3 wor(l)ding through wor(l)ding</span>
+            People rely on the stories rich in ancient wisdom to be able to interpret the present and envisage the
+            future, to be able to relate to the world and to establish values and insights. Stories are crucial to the
+            way we look at things. What truly matters is not merely the written, spoken, or contemplated word itself,
+            but rather what is in between, that ties the words together. I propose to define a word as a web of things,
+            that holds something(s) else. A word contains an entire network of relationships, and when we place the word
+            in a different context, new connections emerge. The word always has an impact and generates meanings and
+            truths. As Le Guin would describe it: “Words hold things. They bear meanings. […] [A word is a] bundle,
+            holding things in a particular, powerful relation to one another and to us.”<span class="source">18꩜ (Ursula
+                K. Le Guin: The
+                Carrier Bag Theory of Fiction, Ignota Books, London 2019, p. 41)</span> The words we speak with will
+            influence the
+            thoughts we think with and the values that are implied to this language.
+            <br>
+            <br>
+
+            “It matters what matters we use to think other matters with; it matters what stories we tell to tell other
+            stories with; it matters what knots knot knots, what thoughts think thoughts, what descriptions describe
+            descriptions, what ties tie ties. It matters what worlds make worlds, what worlds make stories.” – Donna
+            Haraway <span class="source">19꩜ (Donna J.
+                Haraway: Staying with the Trouble. Making Kin in the Chthulucene, Duke Univerity Press, Durham and
+                London
+                2016, p. 12)</span>
+            <br>
+            <br>
+            Can we put the previously described linear hierarchical thinking and the accompanying displaced world view
+            of man as the cause for human-made catastrophes? Following the ideas that Donna Haraway proposes in her book
+            Staying with the Trouble. Making Kin in the Chthulucene
+
+            <span class="definition">(Chthulucene: In critique of the terms Anthropocene and Capitalocene, which
+                describe profound geological and biological transformations caused by humans resp. shaped by capitalism,
+                Donna Haraway proposes another term: Chthulucene (from Greek khthôn, meaning earthbound being). She aims
+                to
+                convey that in this drama, the human is not the sole important actor to consider; rather, it is the
+                human
+                with the Earth and all its biotic and abiotic powers as the main acting alliance. This inclusive term is
+                intended to open up new perspectives to change the story that was, is, and will be. cf. Donna J.
+                Haraway:
+                Staying with the Trouble. Making Kin in the Chthulucene, Duke Univerity Press, Durham and London 2016,
+                p.
+                55)</span>
+
+            she states that we have lost sight of the profound interdependence of the world. Everything exists within
+            this complex bundle – the netbag – whose entanglement and interconnectedness holds things together. She
+            claims a radical alternative conception of the world made up of multispecies stories and alternative
+            practices to navigate the challenges of the Anthropocene. To change the way of being within a living and
+            dying sympoiesis: “To think-with is to stay with the natural cultural multispecies trouble on earth.”<span
+                class="source">20꩜
+                (Donna J. Haraway: Staying with the Trouble. Making Kin in the Chthulucene, Duke Univerity Press, Durham
+                and
+                London 2016, p. 40)</span> Haraway calls on us to make kin with the companion species on Earth.<span
+                class="source">21꩜ (cf. Donna J.
+                Haraway: Staying with the Trouble. Making Kin in the Chthulucene, Duke Univerity Press, Durham and
+                London
+                2016, p. 40)</span> Thinking with, within and in between is to enclose rather than to exclude. Speaking
+            with,
+            within and in between is to enclose rather than to exclude.
+
+            <span class="definition">Wor(l)ding (worlding: the gerund of “world”. A term often used by Donna Haraway in
+                her writing. In her conception, worlding can be described as the active co-engagement with materiality
+                and the contexts of existence — an unfinished, always-in-motion, inclusive multispecies being-with and
+                interacting in the world. cf. Helen Palmer and Vicky Hunter: “Worlding”, New Materialism, 2018
+                https://newmaterialism.eu/almanac/w/worlding.html (Retrieved May 24, 2024))</span>
+
+            with, within and in between is to enclose rather than to exclude. This could lead us to reconfigure our
+            relations with the Earth and its multispecies alliance. To reflect on what indigenous knowledge has always
+            encompassed: A language of animacy that includes everything, considering the world and all it contains as a
+            stable, interconnected system that grows and diminishes together, by recognizing the importance of the
+            connections. All of this enables perspectives that could build a more liveable future.<span
+                class="source">22꩜ (cf. Donna J.
+                Haraway: Staying with the Trouble. Making Kin in the Chthulucene, Duke Univerity Press, Durham and
+                London
+                2016, p. 117-119)</span> In conclusion, thinking in causal sequences with a beginning and end diminishes
+            the scope
+            to interpret and contextualize everything else that resides in the messy bag of the story. And the language
+            that speaks this wor(l)d into being is the heart of its culture, that colonizes thoughts, values, and the
+            way we see the world. What would happen if, despite the absence of any plausible causal links, one were to
+            bring distant things into relation?
+
+            <br>
+            <br>
+
+            Would we then see a greater connection? Could this thinking give a broader view of the world? These are of
+            course big questions, but could be concluded with: Resisting linearity encompasses ambiguity, abstraction
+            and association that evokes creativity. This new way of weaving narratives could be found within the
+            systematics of hypertext, a document interlinking multiple things, depending on individual navigation
+            through the web of connections. This is like reading several books at the same time. Reading these multiple
+            stories simultaneously and intermittently, with their “ideas bouncing off each other, simmering, and
+            reproducing in some odd way,”<span class="source">23꩜ (Octavia Butler and Samuel Delany: “The Value of
+                Literacy”, MIT Media in
+                Transition Project, 1998
+                https://www.blackhistory.mit.edu/archive/transcript-octavia-butler-and-samuel-delany-1998 (Retrieved May
+                25,
+                2024))</span> allows new perceptions and unforeseen connections to arise, and distant ideas to emerge
+            that wouldn’t
+            appear by simply reading one book at a time.<span class="source">24꩜ (cf. Octavia Butler and Samuel Delany:
+                “The Value of
+                Literacy”, MIT Media in Transition Project, 1998
+                https://www.blackhistory.mit.edu/archive/transcript-octavia-butler-and-samuel-delany-1998 (Retrieved May
+                25,
+                2024))</span> This is how Octavia Butler described her practice as a writer in an interview in 1998.
+            Despite not
+            knowing the concept of computed hypertext at the time, she realized: “So, I guess, in that way, I’m using a
+            kind of primitive hypertext.” – Octavia Butler <span class="source">25꩜ (Octavia Butler and Samuel Delany:
+                “The Value of Literacy”, MIT Media in
+                Transition Project, 1998
+                https://www.blackhistory.mit.edu/archive/transcript-octavia-butler-and-samuel-delany-1998 (Retrieved May
+                25,
+                2024))</span>
+
+
+            <span class="headline" id="linearity">3 disrupting linearity</span>
+            Words written or spoken carry encoded meanings and form relations when they are joined together. Considering
+            the smallest unit of a word, the letter only becomes a word by stringing together accompanying letters; a
+            word only forms a sentence by combining other words, and meaning only arises through the composition of
+            sentences. Similarly, it is within the combination of characters that encodes meaning to the computed
+            system.<span class="source">26꩜ (cf. Tim Berners-Lee: Weaving the Web. The Original Design and Ultimate
+                Destiny of the World Wide
+                Web by Its Inventor, HarperBusiness, New York 1999, p. 12-13)</span> The following chapter outlines the
+            ideas of
+            the pioneers of hypertext and discusses their thoughts on networked information systems.
+
+
+            <span class="headline" id="connections">3.1 within its connections</span>
+            “In an extreme view, the world can be seen as only connections, nothing else,”<span class="source">27꩜ (Tim
+                Berners-Lee: Weaving
+                the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness,
+                New
+                York 1999, p. 12)</span> determines Tim Berners-Lee in his book Weaving the Web – The Original Design
+            and Ultimate
+            Destiny of the World Wide Web by its Inventor,  where he gives an insightful grasp of his research on the
+            development of networked systems. In an extreme view, Berners-Lee translated this philosophy into a digital
+            realm, a space that only exists through its connections, through the way information is related to each
+            other –a global networked hypertext system. By entering a URL, the user navigates a space where things are
+            held “in a particular, powerful relation to one another and to us.”<span class="source">28꩜ (Ursula K. Le
+                Guin: The Carrier Bag
+                Theory of Fiction, Ignota Books, London 2019, p. 41)</span> as a place “without central points,
+            organizing
+            principles, [and] hierarchies.”<span class="source">29꩜ (Sadie Plant: Zeros and Ones. Digital Women + the
+                new Technolculture,
+                Fourth Estate, London 1998, p. 10)</span> What were the ideas and motivations of the scientists who
+            wanted to
+            rethink and restructure traditional knowledge and information systems? The following section looks at the
+            concepts that led to the emergence of hypertext and eventually the World Wide Web.
+        </p>
+
+        <span class="headline" id="trails">3.2 associative trails</span>
+        By reflecting on the structures of scientific research Vannevar Bush acknowledged in his essay As We May Think
+        that the human brain “operates by association”<span class="source">30꩜ (Vannevar Bush: “As We May Think”, in:
+            The Atlantic Monthly,
+            Volume 176, No. 1, July 1945, p. 121)</span> rather than by static librarian index rules, which to him
+        seemed like an
+        alienating process of compiling sources. Bush described the process of researching resources in a physical
+        library as disturbing to the mind. To be able to locate related documents or topics of interest, the reader had
+        to “emerge from the system and re-enter on a new path”<span class="source">31꩜ (Vannevar Bush: “As We May
+            Think”, in: The Atlantic
+            Monthly, Volume 176, No. 1, July 1945, p. 121)</span> to find a next book.<span class="source">32꩜ (cf.
+            Vannevar Bush: “As We May Think”, in:
+            The Atlantic Monthly, Volume 176, No. 1, July 1945, p. 121)</span> Bush suggests a hypothetical machine
+        called memex
+        (memory expansion concept, a microfilm-based browsing machine), envisioned as “[…] an enlarged intimate
+        supplement to [the individual’s] memory.”<span class="source">33꩜ (Vannevar Bush: “As We May Think”, in: The
+            Atlantic Monthly, Volume
+            176, No. 1, July 1945, p. 121)</span> A system that would allow the user to follow associative trails
+        through and
+        between different documents led by their interest to device new ideas. Accompanying these individual trails, the
+        user would also be given the possibility to add marginal notes and comments and to exchange one’s personal memex
+        with other users. An associative index system that makes pathways visible, where links would be two-directional
+        (an incoming and outreaching connection) and built solely by its users.<span class="source">34꩜ (cf. Vannevar
+            Bush: “As We May Think”,
+            in: The Atlantic Monthly, Volume 176, No. 1, July 1945, p. 112-124)</span>
+
+
+        <br>
+        ~~ image ~~
+        <br>
+        Conceptual sketch of the memex system by Vannevar Bush. Image source: Vannevar Bush: “As We May Think”,
+        in: The Atlantic Monthly, Volume 176, No. 1, July 1945, P. 123.
+        https://filiph.net/text/memex-is-already-here,-it%27s-just-not-evenly-distributed.html (Retrieved May 12, 2024)
+        The drawing shows a conventional desk with two translucent viewing screens side by side, projecting the
+        retrieved files. The files are stored on microfilm cards and accessed by a mechanism controlled through a
+        keyboard and a set of buttons. On the left side, there is a transparent plate that can be used for notes and
+        annotations.
+        <br>
+        ~~ ~~
+        <br>
+        <br>
+        “Thus [...] [the user] goes, building a trail of many items. Occasionally he inserts a comment of his own,
+        either linking it to the main trail or joining it by a side trail to a particular item… Thus he builds a trail
+        of his interest through the maze of material available to him.” – Vannevar Bush <span class="source">35꩜
+            (Vannevar Bush: “As We May Think”, in: The
+            Atlantic Monthly, Volume 176, No. 1, July 1945, p. 123)</span>
+
+        <br>
+        <br>
+
+        Through the conceptual outlining of this fictional instrument, Bush emphasizes the creative nature of thought
+        processes and their associative potentials. Entangled trails of related material form an intimate extension of
+        the mind, weaving through thoughts and shaping significance. Within this intricate web of connections, links
+        don‘t merely convey paths; they embody layers of understanding, reflective of individual conceptions and ideas.
+        Through juxtaposed references (shown in the image), the links become readable bidirectional, giving the
+        possibility to read forward and in reverse. But what if this concept is expanded further? Could links exist that
+        traverse multiple dimensions? How might they manifest?
+
+
+        <span class="headline" id="thought">3.3 augmenting thought </span>
+        <br>
+        ~~ image ~~
+        <br>
+        Screen shot from the video documentation of “The Mother of All Demos” at the Association for Computing Machinery
+        / Institute of Electrical and Electronics Engineers (ACM/IEEE) — Computer Society‘s Fall Joint Computer
+        Conference in San Francisco, by Douglas Engelbart, domstrating the NLS (oN-Line System). Image source: Doug
+        Engelbart Institute https://dougengelbart.org/content/view/276/ (Retrieved May 13, 2024)
+        <br>
+        ~~ ~~
+        <br>
+        In 1968, Douglas Engelbart demonstrated a prototype of the first functional interactive hypertext system called
+        NLS (oN-Line System). Its purpose was not to replace but to augment human abilities. By utilizing the system‘s
+        own features, Engelbart showcased the functions of the NLS system through a live video broadcast (multi-channel
+        video transmission in the conference room), which seemed both then and now like a science fiction revelation,
+        earning it the title of The Mother of All Demos.<span class="source">36꩜ (cf. Alex Wright: Cataloging the World.
+            Paul Otlet and the
+            Birth of the Information Age, Oxford Univ. Press, Oxford 2014, p. 258-260)</span> Engelbart and his team
+        considered the
+        NLS as an experimental laboratory to explore their ideas in navigating information. Through a graphical
+        interface, the user could jump directly to a file deep in a particular document or unfold further information in
+        vertical columns (collapsible views of information, shown in the screen shot), embedded in the link. Links were
+        not labelled in a special way (hidden links), allowing each element to be potentially addressable.<span
+            class="source">37꩜ (cf.
+            Douglas C. Engelbart: “The Click Heard Round The World”, in: Wired, 2004
+            https://www.wired.com/2004/01/mouse/
+            (Retrieved May 13 2024) )</span>
+
+        <br>
+        <br>
+        “Once something is digital it becomes dynamic and can be manipulated in so many ways. There is no reason you
+        have to use just one portrayal.” – Douglas Engelbart <span class="source">38꩜ (Douglas C. Engelbart: “The Click
+            Heard Round The World”, in: Wired, 2004
+            https://www.wired.com/2004/01/mouse/ (Retrieved May 13, 2024) )</span>
+
+        <br>
+        <br>
+        Engelbart identified the fundamental evolutionary basics that are the drive to augment human capabilities, such
+        as language, artefacts (physical gadgets) and methodology. He understood that the world exceeded the simplistic
+        confines of the linear models prevalent at the time. The goal was to augment, not to replace, these attributes
+        by a computer-assisted system in order to induce progress in society. Creating an environment that better
+        resembles the complexity of human thinking through personalised information structures and collaborative working
+        that promotes creativity.<span class="source">39꩜ (Douglas C. Engelbart: “Evolving the Organization of the
+            Future: A Point of View”,
+            in: Ablex Publications Corporation (Ed.): Emerging Office Systems, Norwood, NJ 1980, p. 297-308)</span> The
+        most
+        important aspect of the NLS was to equip people with various tools to organize complex information structures
+        and thoughts. Engelbart and his team also placed great emphasis on augmenting the work of a group of people with
+        video and audio conferencing.<span class="source">40꩜ (cf. Alex Wright: “The Web That Wasn‘t” presentation at
+            Google TechTalks, 2007
+            https://www.youtube.com/watch?v=72nfrhXroo8&t=2416s (Retrieved May 17, 2024))</span> What stands out to me
+        here is
+        Engelbart‘s understanding of the transition of thoughts into not physical (writing on paper), but another
+        external form of existence – establishing a digital framing of thoughts. Another interesting idea is to decide
+        not to mark links in any way, even to hide them. Whereas in today’s web, a link is labeled with a blue underline
+        by default. Would it be possible to erase even more hierarchies in reading hypertext by eliminating any forms of
+        labels?
+
+        <span class="headline" id="text">3.4 beyond ordinary text</span>
+
+        Inspired by Bush’s idea of associative trails, Ted Nelson realized that “[h]uman ideas, science, scholarships
+        and language are constantly collapsing and unfolding,”<span class="source">41꩜ (Theodor Holm Nelson: “Complex
+            information processing:
+            a file structure for the complex, the changing and the indeterminate”, in: Association for Computing
+            Machinery
+            (Hg.): Proceedings of the 1965 20th National Conference, New York 1965, p. 96-97)</span> and their units
+        must be seen
+        as “a bundle of relationships”<span class="source">42꩜ (Theodor Holm Nelson: “Complex information processing: a
+            file structure for the
+            complex, the changing and the indeterminate”, in: Association for Computing Machinery (Hg.): Proceedings of
+            the
+            1965 20th National Conference, New York 1965, p. 97)</span>. These systems are too complex and dynamic to be
+        managed as
+        consistent fixed structures. What is logical today could become contradictory tomorrow. He figured that these
+        observations should be incorporated into a supporting computerized information system, which he outlined as a
+        fictional system (ELF- Evolutionary List File) in his academic paper Complex Information Processing: A File
+        Structure for the Complex, The Changing and the Indeterminate in 1965, where he first coined the term hypertext.
+        “Let me introduce the word 'hypertext'***** to mean a body of written or pictorial material interconnected in
+        such a complex way that it could not conveniently be presented or represented on paper. […] Such a system could
+        grow indefinitely, gradually including more and more of the world‘s written knowledge. […] its internal file
+        structure would have to be built to accept growth, change and complex informational arrangements.” – Ted Nelson
+        <span class="source">43꩜ (Theodor
+            Holm Nelson: “Complex information processing: a file structure for the complex, the changing and the
+            indeterminate”, in: Association for Computing Machinery (Hg.): Proceedings of the 1965 20th National
+            Conference,
+            New York 1965, p. 96)</span>
+
+        <br>
+        ~~ image ~~
+        <br>
+        Illustration of an hypothetical linked system. Image source: Theodor Holm Nelson: “Complex information
+        processing: a file structure for the complex, the changing and the indeterminate”, in: Association for Computing
+        Machinery (Ed.): Proceedings of the 1965 20th National Conference, New York 1965, p. 100 The illustration shows
+        an exemplary linked system made by a historian while writing a book, showing the possible structural thinking
+        and complexity of the writing process. In this scheme a thin line between lists indicates that some links exist;
+        a solid line indicates that the entries are the same.
+        <br>
+        ~~ ~~
+        <br>
+
+        Traditional literature has taught us a sequential way of writing, reading, thinking, and speaking; everything
+        seems to fundamentally unfold in a series of words. However, this approach more likely leads to complex
+        connections being separated, omitted, or shortened, imposing an alienating logic of the correlations on the
+        reader.<span class="source">44꩜ (cf. Theodor Holm Nelson: Literary Machines Edition 87.1. The Report On, and Of,
+            Project Xanadu
+            Concerning Word Processing, Electronic Publishing, Hypertext, Thinkertoys, Tomorrow‘s Intellectual
+            Revolution,
+            and Certain Other Topics Including Knowledge, Education and Freedom (1981)</span>, Published by the author,
+        1987, p.
+        46-50 (1/14 - 1/19)) “The structure of ideas is never sequential.” – Ted Nelson <span class="source">45꩜
+            (Theodor Holm Nelson: Literary Machines
+            Edition 87.1. The Report On, and Of, Project Xanadu Concerning Word Processing, Electronic Publishing,
+            Hypertext, Thinkertoys, Tomorrow‘s Intellectual Revolution, and Certain Other Topics Including Knowledge,
+            Education and Freedom (1981), Published by the author, 1987, p. 48 (1/16))</span> Hypertext should
+        transcend the limitations of paper and surpass its dictated hierarchical linear structure. The prefix hyper
+        suggests something that goes beyond ordinary text, indicating the hyperspace around it. Nelson envisioned such a
+        system would create a more natural thinking environment for the user, providing readers with greater freedom to
+        explore associations, contextualise information, and expand their intellectual expression.<span
+            class="source">46꩜ (cf. Theodor Holm
+            Nelson: Literary Machines Edition 87.1. The Report On, and Of, Project Xanadu Concerning Word Processing,
+            Electronic Publishing, Hypertext, Thinkertoys, Tomorrow‘s Intellectual Revolution, and Certain Other Topics
+            Including Knowledge, Education and Freedom (1981), Published by the author, 1987, p. 21 (0/3))</span> “By
+        ‘hypertext’ I
+        mean non-sequential writing-text that branches and allows choices to the reader, best read at an interactive
+        screen. […] [It is a] series of text chunks connected by links which offer the reader different pathways.” – Ted
+        Nelson <span class="source">47꩜
+            (Theodor Holm Nelson: Literary Machines Edition 87.1. The Report On, and Of, Project Xanadu Concerning Word
+            Processing, Electronic Publishing, Hypertext, Thinkertoys, Tomorrow‘s Intellectual Revolution, and Certain
+            Other
+            Topics Including Knowledge, Education and Freedom (1981), Published by the author, 1987, p. 20 (0/2))</span>
+
+        <br>
+        To implement his ideal vision within a practical framework, Nelson proposed a project called Xanadu in his
+        self-published book Dream Machines in 1981. Intended to be a universal, accessible networked hypertext
+        repository, it remains an unfulfilled vaporware to this day — a utopian vision, with many intriguing
+        concepts.<span class="source">48꩜
+            (cf. Alex Wright: Cataloging the World. Paul Otlet and the Birth of the Information Age, Oxford Univ. Press,
+            Oxford 2014, p. 264)</span>
+
+        <br>
+        ~~ image ~~
+        <br>
+        Screen shot of the latest Xanadu prototype interface. Image source:
+        https://xanadu.com/xanademos/MoeJusteOrigins.html (Retrieved May 19, 2024) Text marked in colour indicates the
+        original text of a cited source embedded directly in the main document, known as transclusion. The referenced
+        sources are displayed as companion pages next to the main text and can also be viewed.
+        <br>
+        ~~ ~~
+        <br>
+        <br>
+
+        “THE XANADU* PARADIGM
+        <br>
+        A Piece of Software that Proposes
+        <br>
+        A New Era of Computers,
+        <br>
+        A New Form of Instant Literature
+        <br>
+        And a Whole New World”
+        <br>
+        <span class="source">49꩜
+            (Theodor Holm Nelson: THE XANADU* PARADIGM, 1987
+            https://archive.org/details/xanaduparadigm00tedn/page/n1/mode/2up (Retrieved May 17 2024))</span>
+
+        <br>
+        <br>
+        “Such a system will represent at last the true structure of information (rather than Procrustean mappings of
+        it), with all its intrinsic complexity and controversy, and provide a universal archival standard worthy of our
+        heritage of freedom and pluralism.” – Ted Nelson <span class="source">50꩜ ()Theodor Holm Nelson: Literary
+            Machines Edition 87.1. The Report On, and
+            Of, Project Xanadu Concerning Word Processing, Electronic Publishing, Hypertext, Thinkertoys, Tomorrow‘s
+            Intellectual Revolution, and Certain Other Topics Including Knowledge, Education and Freedom (1981),
+            Published
+            by the author, 1987, p. 30 (0/12)</span>
+
+        Nelson envisioned a (hyper)space of interwoven references, modifiable by the individual user and traceable to
+        all its original files, precursors, and references. Every linked piece of information would lead to its
+        reference or source and vice-versa <span class="source">51꩜ (cf. Theodor Holm Nelson: “Ted Nelson Demonstrates
+            XanaduSpace”
+            demonstration of XanaduSpace, 2013, https://www.youtube.com/watch?v=1yLNGUeHapA (Retrieved May 17,
+            2024))</span>, links
+        would be two-way links, existing in reverse direction, as a threshold that can be entered both ways. If this
+        principle were to be taken further, could there also be multi-directional links? Could there be multiple
+        entrances or pathways leading to a link? Which path could then be considered the main path, or would there even
+        be one? What effect would that have on reading habits? Ted Nelson offers a truly interesting and liberating way
+        of thinking about information structures, granting the user authority and creativity in navigating these worlds
+        of data, where pieces of information could be easily rearranged to alter their meaning based on their respective
+        contexts. Additionally, within the Xanadu network, referencing information would be handled in a more direct
+        manner. Pieces of text would be included in the referring text through transclusion (as shown in the screen
+        shot), allowing the documents to be read as mutual citations and to maintain the true structure of the
+        sources.<span class="source">52꩜ (cf. Theodor Holm Nelson: “Ted Nelson Demonstrates XanaduSpace” demonstration
+            of XanaduSpace, 2013,
+            https://www.youtube.com/watch?v=1yLNGUeHapA (Retrieved May 17, 2024))</span> Throughout his investigation
+        with the web,
+        Nelson also considered the differences in the content of a document. He contemplated implementing differentiated
+        types of interaction depending on the type of literature to counteract the web‘s rigid, square-like condition,
+        where everything has to fit into a website.<span class="source">53꩜ (cf. Alex Wright: “The Web That Wasn‘t”
+            presentation at Google
+            TechTalks, 2007 https://www.youtube.com/watch?v=72nfrhXroo8&t=2343s (Retrieved May 17, 2024))</span> Ted
+        Nelson
+        envisioned this vast, cross-linked space of material and ideas, encompassing and consisting of all available
+        human knowledge, combined within one system, forming the Docuverse.<span class="source">54꩜ (cf. Theodor Holm
+            Nelson: Literary
+            Machines Edition 87.1. The Report On, and Of, Project Xanadu Concerning Word Processing, Electronic
+            Publishing,
+            Hypertext, Thinkertoys, Tomorrow‘s Intellectual Revolution, and Certain Other Topics Including Knowledge,
+            Education and Freedom (1981), Published by the author, 1987, p. 139-140 (2/53 - 2/54))</span>
+
+
+        <span class="headline" id="worlds">3.5 weaving worlds</span>
+
+        During his research phase at CERN, Tim Berners-Lee went one step further than his predecessors. His vision of
+        decentralising hypertext documents evolved into the World Wide Web, linking into a single network hosted on the
+        wired infrastructure of the Internet and accessible on any computer through a browser.<span class="source">55꩜
+            (cf. Tim Berners-Lee:
+            Weaving the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor,
+            HarperBusiness,
+            New York 1999, p. 7-23)</span> Berners-Lee envisioned a system where everything could potentially be
+        connected with
+        anything. Within such a dynamic system, he saw the potential to overcome the limiting constraints of traditional
+        hierarchical structures, solving one problem after another. What interested him most about the idea of a global
+        network was “that computers could become much more powerful if they could be programmed to link otherwise
+        unconnected information.”<span class="source">56꩜ (Tim Berners-Lee: Weaving the Web. The Original Design and
+            Ultimate Destiny of the
+            World Wide Web by Its Inventor, HarperBusiness, New York 1999, p. 4)</span> He saw the potential for
+        computers to
+        assist in linking random bits of data to uncover other truths and new ways of seeing the world. Similar to the
+        intuitive linking of external influences with a specific situation, which are recalled by the brain as soon as
+        one is exposed to the link/trigger again. The mind can thus create connections that are not actually plausible,
+        but have been experienced and remembered in this way.<span class="source">57꩜ (cf. Tim Berners-Lee: Weaving the
+            Web. The Original
+            Design and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness, New York 1999, p.
+            1-6)</span> His
+        vision for the web was to enhance the individual’s analytical capabilities, but especially their creative
+        abilities, by enabling them to build intuitive links while browsing the web. Applying this to a broader and more
+        diverse group of people this could evolve into a wide web of connections as an even larger intuitive brain of
+        dreamed-up associations, sudden discoveries, and linked paths of understanding. According to Berners-Lee, the
+        web could be the source of social change through collective action. He sees each individual as an important and
+        active member of the web community who, by linking thoughts and “half-formed idea[s]”<span class="source">58꩜
+            (Tim Berners-Lee:
+            Weaving the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor,
+            HarperBusiness,
+            New York 1999, p. 201)</span>, enables discoveries for others, thereby helping the group become wiser.<span
+            class="source">59꩜ (cf. Tim
+            Berners-Lee: Weaving the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its
+            Inventor,
+            HarperBusiness, New York 1999, p. 199-204)</span>
+        <br>
+        <br>
+
+        “Perhaps that late-night surfing is not such a waste of time after all: It is just the Web dreaming.” – Tim
+        Berners-Lee <span class="source">60꩜ (Tim Berners-Lee: Weaving the Web. The Original Design and Ultimate Destiny
+            of the World Wide Web by Its Inventor, HarperBusiness, New York 1999, p. 202)</span>
+        <br>
+        <br>
+        Tim Berners-Lee dreamed of the computer becoming this unconstrained space of freedom for the human mind. A
+        hyperspace, that could foster a certain “collective intuition”<span class="source">61꩜ (Tim Berners-Lee: Weaving
+            the Web. The Original
+            Design and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness, New York 1999, p.
+            206)</span> and
+        “intercreativity” <span class="source">62꩜ (Tim Berners-Lee: Weaving the Web. The Original Design and Ultimate
+            Destiny of the World
+            Wide Web by Its Inventor, HarperBusiness, New York 1999, p. 206)</span> , challenging truths adaptively and
+        democratically to lead progress rather than creating change out of conflict.<span class="source">63꩜ (cf. Tim
+            Berners-Lee: Weaving the
+            Web. The Original Design and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness, New
+            York
+            1999, p. 206-207)</span>
+        <br>
+        Needless to say, Berners-Lee was always aware of the potential side effects of the web. Yet, in the spirit of a
+        founder, he was and still is building his ideas upon his visionary utopian dream.
+
+        <span class="headline" id="URL">3.6 enter URL</span>
+        <br>
+        <br>
+        “Hypertext would be most powerful if it could conceivably point to absolutely anything. Every node,
+        document–whatever it was called–would be fundamentally equivalent in some way. Each would have an address by
+        which it could be referenced. They would all exist together in the same space–the information space.” – Tim
+        Berners-Lee <span class="source">64꩜ (Tim
+            Berners-Lee: Weaving the Web. The Original Design and Ultimate Destiny of the World Wide Web by Its
+            Inventor,
+            HarperBusiness, New York 1999, p. 16)</span>
+
+        <br>
+        <br>
+        To create the global information space, Berners-Lee needed to enable computers to communicate with each other.
+        All that was needed were some basic rules and a shift in perspective. Because, according to Berners-Lee, people
+        seemed not fully aware of the fact that, “[t]he web was not a physical 'thing' that existed in a certain
+        'place'. It was a 'space' in which information could exist.”<span class="source">65꩜ (Tim Berners-Lee: Weaving
+            the Web. The Original
+            Design and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness, New York 1999, p.
+            36)</span> A
+        hypertext document would be transferred over the Internet using HTTP (Hypertext Transfer Protocol), one of
+        several protocols, and made readable by a browser through HTML (Hypertext Markup Language) to display the
+        content. To make each document accessible, Berners-Lee developed the idea of giving each one a specific address,
+        a URL (Uniform Resource Locator).<span class="source">66꩜ (cf. Tim Berners-Lee: Weaving the Web. The Original
+            Design and Ultimate
+            Destiny of the World Wide Web by Its Inventor, HarperBusiness, New York 1999, p. 35-41)</span>
+
+        <br>
+        <br>
+
+        http://www.soft-encyclopedia.net/doc1/doc2/doc3
+        <br>
+        \_1_/ \_________2__________/ \_____3_____/
+        <br>
+        _1 protocol_ ___2 domain____ ____3 path_____
+        <br>
+        <br>
+        The URL contained everything the browser needed to know: the method the browser uses to retrieve the document
+        (http://), which web server to request (www.soft-encyclopedia.net), and the name of the specific document within
+        the server (/doc3).<span class="source">67꩜ (cf. Tim Berners-Lee: Weaving the Web. The Original Design and
+            Ultimate Destiny of the
+            World Wide Web by Its Inventor, HarperBusiness, New York 1999, p. 35-41)</span> And “[t]here might be
+        hundreds [of
+        paths], each with a different name after the slash,”<span class="source">68꩜ (Tim Berners-Lee: Weaving the Web.
+            The Original Design
+            and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness, New York 1999, p. 36)</span>
+        indicating the
+        path to take within the document to access the desired file.
+        In his book, Berners-Lee describes the web as a space in which information exists and is made accessible to
+        individuals. What was necessary for this was for people to make information available by posting them on a
+        server. Berners-Lee’s vision was that everyone could publish, read, and edit resources by using a browser/editor
+        that accessed the desired file on a server through a specific URL.<span class="source">69꩜ (cf. Tim Berners-Lee:
+            Weaving the Web. The
+            Original Design and Ultimate Destiny of the World Wide Web by Its Inventor, HarperBusiness, New York 1999,
+            p.
+            37-38)</span> It becomes clear that Berners-Lee’s vision for the web embodies the desire for collective
+        change by
+        embracing multiplicity. Equipped with an awareness of relationships and interconnectedness, knowledge would not
+        be perceived as isolated facts, but rather originating from their linkages and as something that needs to be
+        shared, lived, embodied, and used.
+
+        <span class="headline" id="conclusion">conclusion</span>
+
+        Knowledge that was once encapsulated in written works, created by an author, authorised, and authoritative
+        claimed its own truth <span class="source">70꩜ (cf. Sadie Plant: Zeros and Ones. Digital Women + the new
+            Technolculture, Fourth Estate,
+            London 1998, p. 9)</span>, while its margins were at risk of being cut off. Today represented by “digital
+        machines
+        [...] [weaving] new networks from what were once isolated words” <span class="source">71꩜ (Sadie Plant: Zeros
+            and Ones. Digital Women +
+            the new Technolculture, Fourth Estate, London 1998, p. 11)</span> to form a new shape of a multi-linear
+        world. George
+        Landow argues in his book Hypertext. The Convergence of Contemporary Critical Theory and Technology that “[...]
+        we must abandon conceptual systems founded upon ideas of center, margins, hierarchy, and linearity and replace
+        them with ones of multi linearity, nodes, links and networks.”<span class="source">72꩜ (George Landow:
+            Hypertext. The Convergence of
+            Contemporary Critical Theory and Technology, Johns Hopkins University Press, Baltimore and London 1992, p.
+            2)</span>
+        Translating hypertext into existence was a way to expand the margins of linear literature and centralized
+        knowledge to become a linked event and a browsable story. It encapsulates the quality of the human ideation and
+        association process by assisting in structuring and restructuring thoughts and information. In this way, it
+        fosters creativity, opens up new perspectives, and creates truths that previously seemed faint to alter the
+        course of reality. The World Wide Web emerged from the belief that knowledge should be freely accessible to all,
+        a self-regulated and self-organized information spaces, a non-space of experience, a seemingly new world
+        accessible by disembodied consciousnesses and existing behind our computer screens.<span class="source">73꩜
+            (Tilman Baumgärtel:
+            “II.Programme und Manifeste.Einleitung”, in: Reclam (Ed.): Texte zur Theorie des Internets, Ditzingen 2017,
+            p.
+            56)</span> Where the interests and associations of the reader set the structure of meaning in this “infinite
+        re-centerable system.”<span class="source">74꩜ (George Landow: Hypertext 3.0. Critical Theory and New Media in
+            an Era of
+            Globalization, Johns Hopkins University Press, Baltimore 2006, p. 11)</span> The user gains authority as a
+        reader and
+        writer. “Using the Net quickly became a matter of surfing, a channel­ hopping mode facilitated and demanded by
+        information which is no longer bound together in linear texts or library classifica­tions, but instead needs to
+        be laterally traversed.” – Sadie Plant <span class="source">75꩜ (Sadie Plant: Zeros and Ones. Digital Women +
+            the new Technolculture, Fourth Estate,
+            London 1998, p. 46)</span> Conceived as the dawn of a new world order by its creators, the web arose from
+        the same systematic essence inherent to the fabric of existence – as a network of connections and
+        interdependencies. It could be argued that the computer rewrites the ancient conceptions of man – his centric
+        world and the linearity of his existence – to call into question the fundamental beliefs that are crucial to
+        patriarchal culture.
+        Discovering the true paradigms intrinsic to the universe: “chaos, complexity, connectionism,”<span
+            class="source">76꩜ (Sadie Plant:
+            Zeros and Ones. Digital Women + the new Technolculture, Fourth Estate, London 1998, p. 164)</span> becomes
+        tangible
+        through the linked system of hypertext. All of which suggests that the ignorant distinctions and ideas of the
+        unique position of the human are delusional and a shortened version of the system.
+        <br>
+        <br>
+
+        <p style="color: gray;">
+            This is the BA thesis <strong>soft encyclopedia</strong>, written by Julia Kerres. 2024.
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>
